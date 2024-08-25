@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PowerZone</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/css/ind-st.css" />
+    <link rel="script" type="script/js" href="script.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">PowerZone</div>
+      <div class="nav">
+        <a href="#">ГЛАВНАЯ</a>
+        <a href="#">СТРАНИЦЫ</a>
+        <a href="#">ГАЛЕРЕЯ</a>
+        <a href="#">МАТЧИ</a>
+        <a href="#">БЛОГ</a>
+        <a href="#">КОНТАКТЫ</a>
+      </div>
+      <div class="social">
+        <a  href="#"><img class="fo-icon-tw fo-icon fo-icon2" src="/img/icon/facebook_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-fa fo-icon fo-icon2" src="/img/icon/in_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-pi fo-icon fo-icon2" src="/img/icon/pi_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-in fo-icon fo-icon2" src="/img/icon/tw_123717.png" alt="" /></a>
+      </div>
+    </header>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/img/img/gyms-working-out-dumbbells-women-fitness-model-1537083.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/img/img/95d1747b7848466d06a002b0e41b6928.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="/img/img/foto-devushek-v-trenazhernom-zale_2.jpg" alt=""></div>
+ 
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="container-2">
+      <div class="title-top">
+        <h1 class="title">Все возможности PowerZone</h1>
+        <h2 class="subtitle">Тренируйтесь вместе с нами</h2>
+      </div>
+      <div class="image-gallery">
+        <div class="image-item">
+          <div class="image-ovr">    <img src="/img/img/Без имени-1.jpg" /><div class="overlay-im"><h1>Фитнес</h1><p>Персональные тренировки</p><p>Силовые тренировки</p><p>Кардио-зона</p></div> </div>
+        </div>
+        <div class="image-item">
+          <div class="image-ovr">  <img src="/img/img/Без имени-2.jpg" /><div class="overlay-im"><h1>Спортзал</h1><p>Персональные тренировки</p><p>Игровые виды спорта</p><p>Кроссфит</p></div> </div>
+        </div>
+        <div class="image-item">
+          <div class="image-ovr">   <img src="/img/img/Без имени-3.jpg" /><div class="overlay-im"><h1>Групповых занятий</h1><p>Танцевальные классы</p><p>Пилатес и стретчинг</p><p>Аэробика</p></div> </div>
+        </div>
+      </div>
+      <p class="description">
+        Добро пожаловать в PowerZone!
+
+Наш спортзал предлагает разнообразные тренировки и современные методики фитнеса. У нас вы найдете новейшее оборудование и профессиональных тренеров, которые помогут вам достичь ваших целей. Мы создали атмосферу, где каждый чувствует себя комфортно и мотивированно.
+
+В PowerZone вас ждут функциональный тренинг, высокоинтенсивные интервальные тренировки (HIIT), йога, пилатес и многое другое. Присоединяйтесь к нам и откройте для себя новые возможности своего тела и духа.
+
+
+      </p>
+      <button class="about-btn">О нас</button>
+    </div>
+    <div class="container-3">
+      <div class="title-top">
+        <h1 class="title">Тренировки в действии</h1>
+        <h2 class="subtitle">Выбери свою идеальную программу</h2>
+      </div>
+      <div class="container-top">
+        <div class="container-1">
+          <div class="game-card-1">
+            <img src="/img/img/Без имени-4.jpg" alt="Game Screenshot" />
+            <div class="overlay-1" data-video-url="https://www.youtube.com/embed/video-id-1">
+              <div class="text">Гибкость и баланс</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-top-2">
+          <div class="game-card">
+            <img src="/img/img/Без имени-5.jpg" alt="Game Screenshot" />
+            <div class="overlay" data-video-url="https://www.youtube.com/embed/video-id-2">
+              <div class="text">Силовая тренировка</div>
+            </div>
+          </div>
+      
+          <div class="game-card">
+            <img src="/img/img/Без имени-6.jpg" alt="Game Screenshot" />
+            <div class="overlay" data-video-url="https://www.youtube.com/embed/video-id-3">
+              <div class="text">Кроссфит</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container-teb">
+      <div class="tabs-teb">
+          <button class="tab-button-teb active-teb" onclick="openTab('all-matches-teb', this)">Спортзал</button>
+          <button class="tab-button-teb" onclick="openTab('upcoming-matches-teb', this)">Фитнес</button>
+          <button class="tab-button-teb" onclick="openTab('recent-results-teb', this)">Груповые тренировки</button>
+      </div>
+
+      <div id="all-matches-teb" class="tab-content-teb active-teb">
+        <div class="match-teb match-teb1">
+            <div class="match-info-teb">
+              <div class="in-match">
+                <h2>Силовая тренировка</h2>
+                <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+                <p><span>Продолжительность тренировки: 60 минут</span></p>
+            </div>
+            <p class="det-match det-match1">
+                Разминка (10 минут): легкий бег и растяжка.<br>
+                Основная часть (40 минут):<br>
+                - Приседания, жим лежа, тяга в наклоне.<br>
+                Заминка (10 минут): статическая растяжка.
+            </p>
+        </div>
+    </div>
+    <div class="match-teb match-teb2">
+        <div class="match-info-teb">
+            <div class="in-match">
+                <h2>Кардио тренировка</h2>
+                <p>Тренировка в неделю: 4 раза в неделю (Вторник, Четверг, Суббота, Воскресенье)</p>
+                <p><span>Продолжительность тренировки: 45 минут</span></p>
+            </div>
+            <p class="det-match det-match2">
+                Разминка (5 минут): бег и суставная гимнастика.<br>
+                Основная часть (35 минут):<br>
+                - Беговая дорожка, эллипсоид, велотренажер.<br>
+                Заминка (5 минут): легкая растяжка.
+            </p>
+        </div>
+    </div>
+    <div class="match-teb match-teb3">
+        <div class="match-info-teb">
+            <div class="in-match">
+                <h2>Интервальная тренировка</h2>
+                <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+                <p><span>Продолжительность тренировки: 50 минут</span></p>
+            </div>
+            <p class="det-match det-match3">
+                Разминка (10 минут): активные движения.<br>
+                Основная часть (35 минут):<br>
+                - Интервалы высокой и низкой интенсивности на беговой дорожке.<br>
+                Заминка (5 минут): легкие растяжки.
+            </p>
+        </div>
+    </div>
+    <div class="match-teb match-teb4">
+        <div class="match-info-teb">
+            <div class="in-match">
+                <h2>Силовая выносливость</h2>
+                <p>Тренировка в неделю: 3 раза в неделю (Вторник, Четверг, Суббота)</p>
+                <p><span>Продолжительность тренировки: 40 минут</span></p>
+            </div>
+            <p class="det-match det-match4">
+                Разминка (5 минут): легкие кардио упражнения.<br>
+                Основная часть (30 минут):<br>
+                - Комплекс упражнений с гантелями и на тренажерах.<br>
+                Заминка (5 минут): расслабляющие растяжки.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+         
+      
+      <div id="upcoming-matches-teb" class="tab-content-teb">
+        <div class="match-teb">
+          <div class="match-info-teb">
+            <div class="in-match">
+              <h2>Сила и выносливость</h2>
+              <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+              <p><span>Продолжительность тренировки: 60 минут</span></p>
+          </div>
+          <p class="det-match det-match1">
+              Разминка (10 минут): легкий бег и растяжка.<br>
+              Основная часть (40 минут):<br>
+              - Понедельник: силовые упражнения.<br>
+              - Среда: интервальные кардио.<br>
+              - Пятница: смешанные силовые и кардио.<br>
+              Заминка (10 минут): статическая растяжка.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb2">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Функциональный фитнес</h2>
+              <p>Тренировка в неделю: 4 раза в неделю (Вторник, Четверг, Суббота, Воскресенье)</p>
+              <p><span>Продолжительность тренировки: 45 минут</span></p>
+          </div>
+          <p class="det-match det-match2">
+              Разминка (5 минут): бег и суставная гимнастика.<br>
+              Основная часть (35 минут):<br>
+              - Вторник: упражнения с собственным весом.<br>
+              - Четверг: тренировка с гантелями.<br>
+              - Суббота: HIIT.<br>
+              - Воскресенье: йога или пилатес.<br>
+              Заминка (5 минут): мягкая растяжка.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb3">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Кардио и силовые</h2>
+              <p>Тренировка в неделю: 5 раз в неделю (Понедельник, Вторник, Четверг, Пятница, Суббота)</p>
+              <p><span>Продолжительность тренировки: 50 минут</span></p>
+          </div>
+          <p class="det-match det-match3">
+              Разминка (10 минут): активные движения.<br>
+              Основная часть (35 минут):<br>
+              - Понедельник, Четверг: силовые тренировки.<br>
+              - Вторник, Пятница: кардио с переменной интенсивностью.<br>
+              - Суббота: комбинированная тренировка.<br>
+              Заминка (5 минут): легкие растяжки.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb4">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Гибкость и баланс</h2>
+              <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+              <p><span>Продолжительность тренировки: 40 минут</span></p>
+          </div>
+          <p class="det-match det-match4">
+              Разминка (5 минут): легкие кардио упражнения.<br>
+              Основная часть (30 минут):<br>
+              - Понедельник: упражнения на гибкость.<br>
+              - Среда: упражнения на баланс.<br>
+              - Пятница: комбинированная тренировка.<br>
+              Заминка (5 минут): расслабляющие растяжки.
+          </p>
+      </div>
+  </div>
+</div>
+      
+      <div id="recent-results-teb" class="tab-content-teb">
+        <div class="match-teb">
+          <div class="match-info-teb">
+            <div class="in-match">
+              <h2>Групповой фитнес</h2>
+              <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+              <p><span>Продолжительность тренировки: 60 минут</span></p>
+          </div>
+          <p class="det-match det-match1">
+              Разминка (10 минут): динамическая растяжка и кардио.<br>
+              Основная часть (40 минут):<br>
+              - Комбинация аэробных и силовых упражнений.<br>
+              Заминка (10 минут): расслабляющие упражнения.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb2">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Йога</h2>
+              <p>Тренировка в неделю: 2 раза в неделю (Вторник, Четверг)</p>
+              <p><span>Продолжительность тренировки: 75 минут</span></p>
+          </div>
+          <p class="det-match det-match2">
+              Разминка (10 минут): дыхательные упражнения.<br>
+              Основная часть (55 минут):<br>
+              - Асаны и последовательности для гибкости и силы.<br>
+              Заминка (10 минут): медитация и расслабление.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb3">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Зумба</h2>
+              <p>Тренировка в неделю: 3 раза в неделю (Понедельник, Среда, Пятница)</p>
+              <p><span>Продолжительность тренировки: 60 минут</span></p>
+          </div>
+          <p class="det-match det-match3">
+              Разминка (10 минут): легкие танцевальные движения.<br>
+              Основная часть (40 минут):<br>
+              - Энергичные танцевальные комбинации.<br>
+              Заминка (10 минут): легкие растяжки.
+          </p>
+      </div>
+  </div>
+  <div class="match-teb match-teb4">
+      <div class="match-info-teb">
+          <div class="in-match">
+              <h2>Кроссфит</h2>
+              <p>Тренировка в неделю: 4 раза в неделю (Понедельник, Среда, Пятница, Суббота)</p>
+              <p><span>Продолжительность тренировки: 60 минут</span></p>
+          </div>
+          <p class="det-match det-match4">
+              Разминка (10 минут): кардио и мобилизация.<br>
+              Основная часть (45 минут):<br>
+              - Комплекс упражнений высокой интенсивности.<br>
+              Заминка (5 минут): статическая растяжка.
+          </p>
+      </div>
+  </div>
+</div>
+  </div>
+    <div class="swiper-2">
+      <div class="container-myNewSwiper">
+        <div class="container">
+          <div class="title-top">
+            <h1 class="title">Откройте для себя возможности PowerZone</h1>
+<h2 class="subtitle">Трансформация начинается здесь</h2>
+          </div>
+        </div>
+        <div class="swiper myNewSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/11.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/2021_Athletic_girl_shakes_her_arms_in_the_gym_151112_31.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/162185536360ab8c834abce6.03072291.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/ball-fitness-girl-pose-workout-legs.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/crossfit-wheel-female-tattoos.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/dumbbell-weight-lifting-fitness-brunette-hard-work.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/empty-gym-interior-2021-09-24-04-15-07-utc-1024x1024.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/fitness-sexy-pose-legs-workout.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/katy-hearn-workout-fitness.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/poza-muscle-myshtsy-shtanga-press-bodibilder-abs-bodybuild-3.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/poza-muscle-myshtsy-trenirovka-trenazhery-bodibilder-trainin.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/pushups-pose-gym-fitness.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/shtanga-skamya-gym-fitness.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/SPGBjXyRxV-Cu0QSyWi4j_2HK7keQUZu7u6KcglqJBtPEvUHm5S1BGWkmUPl3GFHyxdlsgW78Mo63_HanlKaCCKD.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/valentina-figura-sportzal-sportivnyi-stil-trenazher.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/work_2-16-1024x1024.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/workout-pushups-fitness-female.jpg" ></div>
+            <div class="swiper-slide swiper-slide-2"><img src="/img/img/im/XXL.jpg" ></div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-section-top">
+      <div class="title-top">
+        <h1 class="title">Добро пожаловать в PowerZone</h1>
+        <h2 class="subtitle">Достоинства & Преимущество </h2>
+      </div>
+      <div class="faq-section">
+        <div class="faq-item faq-item-1 faq-item-A">
+          <h2>Современное оборудование</h2>
+          <p>
+            PowerZone оснащен самым новым и современным спортивным оборудованием, которое удовлетворит потребности как новичков, так и профессионалов.
+          </p>
+        </div>
+        <div class="faq-item faq-item-2 faq-item-B">
+          <h2>Квалифицированные тренеры</h2>
+          <p>
+            В нашем зале работают опытные тренеры, которые помогут вам достичь ваших целей, будь то похудение, набор мышечной массы или улучшение общей физической формы.
+          </p>
+        </div>
+        <div class="faq-item faq-item-3 faq-item-A">
+          <h2>Разнообразные тренировки</h2>
+          <p>
+            В PowerZone предлагается широкий спектр групповых тренировок, включая йогу, пилатес, кроссфит и кардио-тренировки, что позволяет каждому найти что-то по душе.
+          </p>
+        </div>
+        <div class="faq-item faq-item-4 faq-item-B">
+          <h2>Индивидуальный подход</h2>
+          <p>
+            Мы разрабатываем индивидуальные программы тренировок и питания, учитывая ваши цели и особенности организма.
+          </p>
+        </div>
+        <div class="faq-item faq-item-3 faq-item-A">
+          <h2>Удобное расположение</h2>
+          <p>
+            Наш спортзал находится в удобном месте, что позволяет легко добраться на общественном транспорте или автомобиле.
+          </p>
+        </div>
+        <div class="faq-item faq-item-4 faq-item-B">
+          <h2>Просторные и чистые помещения</h2>
+          <p>
+            PowerZone гордится просторными и хорошо вентилируемыми тренировочными зонами, а также безупречной чистотой.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-3">
+      <h1>PowerZone, ГДЕ СПОРТИВНЫЕ ВОЗМОЖНОСТИ ВСТРЕЧАЮТСЯ С РЕАЛЬНЫМИ ДОСТИЖЕНИЯМИ</h1>
+      <button>ПОСМОТРЕТЬ ТРЕНИРОВКИ</button>
+      <div class="stats">
+        <div class="ctat-sst-p">
+          <h2>200,000</h2>
+          <p>Посещений в месяц</p>
+          <p class="sst-p"></p>
+        </div>
+        <div class="ctat-sst-p">
+          <h2>500</h2>
+          <p>Активных участников каждый день</p>
+          <p class="sst-p"></p>
+        </div>
+        <div class="ctat-sst-p">
+          <h2>50+</h2>
+          <p>Профессиональных тренеров</p>
+          <p class="sst-p"></p>
+        </div>
+      </div>
+      </div>
+      <div class="testimonial">
+        <div class="swiper mymySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Прекрасный спортклуб, который подходит как для новичков, так и для опытных спортсменов. Я нашла здесь не только тренировки, но и поддержку, мотивацию и отличную компанию. Тренеры вдохновляют на достижения новых высот, а разнообразие тренажеров и занятий позволяет найти что-то по душе каждому. Это место стало неотъемлемой частью моей жизни, и я не представляю свои дни без занятий здесь.
+              </p>
+              <p class="swi-span">- Мария Иванова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                В этом спортклубе отличные тренеры, которые всегда подскажут и помогут. Это место, куда хочется возвращаться снова и снова. Здесь я смог добиться своих целей в плане физической формы и здоровья. Большое разнообразие тренировок и оборудований позволяет подобрать оптимальную программу для любого уровня подготовки. Рекомендую всем, кто хочет улучшить свое здоровье и настроение!
+              </p>
+              <p class="swi-span">- Виктор Орлов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Я нашла идеальный спортклуб для себя. Здесь я нашла не только тренировки, но и поддержку, мотивацию и отличную компанию. Тренеры вдохновляют на достижения новых высот, а разнообразие тренажеров и занятий позволяет найти что-то по душе каждому. Это место стало неотъемлемой частью моей жизни, и я не представляю свои дни без занятий здесь.
+              </p>
+              <p class="swi-span">- Татьяна Климова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Моя жизнь изменилась к лучшему с тех пор, как я начал заниматься в этом спортклубе. Отличное оборудование, современные тренажеры и разнообразные программы тренировок позволяют поддерживать форму на высшем уровне. Тренеры всегда готовы помочь, дать ценные советы и мотивировать на новые достижения. Я стал чувствовать себя намного лучше и увереннее благодаря занятиям здесь.
+              </p>
+              <p class="swi-span">- Анна Смирнова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Мое здоровье и физическая форма значительно улучшились с тех пор, как я стал заниматься в этом спортклубе. Тренеры всегда готовы помочь и поддержать, а разнообразие тренировок позволяет подобрать оптимальную программу для любого уровня подготовки. Здесь я нашел не только место для тренировок, но и поддержку, мотивацию и отличную компанию. Рекомендую всем!
+              </p>
+              <p class="swi-span">- Сергей Михайлов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Великолепное место для тренировок! Всегда чисто, комфортно и дружелюбно. Тренеры профессионалы своего дела, которые не только помогают составить индивидуальный план тренировок, но и следят за правильностью выполнения упражнений. Я нашел здесь не только тренировки, но и поддержку, мотивацию и отличную компанию. Спасибо за высокий уровень обслуживания и поддержку на пути к моим фитнес-целям.
+              </p>
+              <p class="swi-span">- Андрей Григорьев</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Я занимаюсь здесь уже более года, и результаты превзошли все мои ожидания. Каждая тренировка проходит в комфортной и поддерживающей атмосфере. Тренеры профессионалы своего дела, они не только помогают составить индивидуальный план тренировок, но и следят за правильностью выполнения упражнений. Очень благодарен за такой высокий уровень сервиса и внимания к каждому клиенту.
+              </p>
+              <p class="swi-span">- Игорь Кузнецов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Уникальная атмосфера и высокопрофессиональные тренеры делают каждое посещение спортклуба настоящим удовольствием. Здесь я смог добиться своих целей в плане физической формы и здоровья. Большое разнообразие тренировок и оборудований позволяет подобрать оптимальную программу для любого уровня подготовки. Рекомендую всем, кто хочет улучшить свое здоровье и настроение!
+              </p>
+              <p class="swi-span">- Алексей Петров</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Здесь я нашла не только тренировки, но и новых друзей. Спортклуб предлагает широкий выбор тренировочных программ, которые подходят для любого уровня подготовки. Тренеры всегда готовы помочь и дать ценные советы. Я в восторге от того, как быстро я вижу результаты своих тренировок. Это место действительно вдохновляет на новые достижения и помогает достигать поставленных целей.
+              </p>
+              <p class="swi-span">- Наталья Ковалева</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Лучший спортклуб, в котором я когда-либо занимался. Здесь я нашел не только место для тренировок, но и поддержку, мотивацию и отличную компанию. Тренеры вдохновляют на достижения новых высот, а разнообразие тренажеров и занятий позволяет найти что-то по душе каждому. Это место стало неотъемлемой частью моей жизни, и я не представляю свои дни без занятий здесь.
+              </p>
+              <p class="swi-span">- Роман Павлов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                PowerZone помогает поддерживать отличную физическую форму. Тренеры всегда готовы помочь.
+              </p>
+              <p class="swi-span">- Дмитрий Васильев</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Я долго искала спортклуб, который подошел бы мне по всем параметрам, и наконец нашла его. Тренировки здесь - это не только физическая нагрузка, но и настоящее удовольствие. Комфортные раздевалки, современные тренажеры и доброжелательная атмосфера создают идеальные условия для занятий. Особенно радует индивидуальный подход тренеров, которые всегда готовы помочь и поддержать.
+              </p>
+              <p class="swi-span">- Ольга Сидорова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Лучший спортклуб в городе! Высокий уровень сервиса и приятная атмосфера.
+              </p>
+              <p class="swi-span">- Екатерина Фролова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Занимаюсь уже год, вижу значительный прогресс. Рекомендую всем, кто хочет улучшить свою физическую форму.
+              </p>
+              <p class="swi-span">- Игорь Кузнецов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Отличное место для занятий спортом. Тренеры мотивируют на новые достижения.
+              </p>
+              <p class="swi-span">- Сергей Михайлов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Спортклуб помог мне изменить свою жизнь к лучшему. С каждым днем я становлюсь сильнее и выносливее благодаря профессионализму тренеров и отличному оборудованию. Здесь всегда чисто, комфортно и дружелюбно. Я очень благодарна за такой высокий уровень сервиса и внимания к каждому клиенту. Это место действительно вдохновляет на новые достижения и помогает достигать поставленных целей.
+              </p>
+              <p class="swi-span">- Елена Морозова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Здесь нашла не только тренировки, но и новых друзей. Рекомендую всем!
+              </p>
+              <p class="swi-span">- Наталья Ковалева</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Прекрасное место для занятий спортом. Тренеры заботятся о твоем прогрессе.
+              </p>
+              <p class="swi-span">- Михаил Белов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Великолепное место для тренировок! Всегда чисто, комфортно и дружелюбно.
+              </p>
+              <p class="swi-span">- Андрей Григорьев</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Уникальная атмосфера и мотивирующие тренеры. Здесь можно достичь своей цели.
+              </p>
+              <p class="swi-span">- Мария Иванова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Отличное место для тренировок! Современные тренажеры и профессиональные тренеры. Результаты превзошли ожидания.
+              </p>
+              <p class="swi-span">- Анна Смирнова</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Прекрасное место для занятий спортом. Тренеры в этом спортклубе действительно заботятся о твоем прогрессе и всегда готовы дать ценные советы. Здесь я нашел не только отличные тренировки, но и приятную атмосферу, которая мотивирует на новые достижения. Большое спасибо за высокий уровень обслуживания и поддержку на пути к моим фитнес-целям.
+              </p>
+              <p class="swi-span">- Михаил Белов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Лучший спортклуб! Помогает достигать новых высот в фитнесе.
+              </p>
+              <p class="swi-span">- Роман Павлов</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <h1>"</h1>
+              <p>
+                Отличный спортклуб с разнообразными программами тренировок. Спасибо за поддержку!
+              </p>
+              <p class="swi-span">- Алексей Петров</p>
+            </div>
+            
+            
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+   <!--  <section class="recent-articles">
+      <h2>Последние Посты</h2>
+      <div class="posts">
+        <div class="post">
+          <div class="post-im"></div>
+          <img src="path/to/your/image1.jpg" alt="Important Brands" />
+          <div class="post-date">20 Май 2019</div>
+          <h3>Важные бренды доверились нам</h3>
+        </div>
+        <div class="post">
+          <div class="post-im"></div>
+          <img src="path/to/your/image2.jpg" alt="Esports Games" />
+          <div class="post-date">18 Май 2019</div>
+          <h3>Что случилось с киберспортивными играми в эти выходные</h3>
+        </div>
+        <div class="post">
+          <div class="post-im"></div>
+          <img src="path/to/your/image3.jpg" alt="Lion King vs Wolf" />
+          <div class="post-date">16 Май 2019</div>
+          <h3>Лев против Волка: предстоящие умные матчи</h3>
+        </div>
+      </div>
+    </section> -->
+   
+    <div class="map">
+      <div class="title-top">
+        <h1 class="title">Найдите нас здесь</h1>
+        <h2 class="subtitle">Свяжитесь с PowerZone</h2>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1ot9LW_orlwtNC-s4io9s0s9fG5fISIs&ehbc=2E312F&noprof=1"
+        width="640"
+        height="480"
+      ></iframe>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h1>СВЯЖИТЕСЬ С НАМИ</h1>
+        <h2>МЫ ЗДЕСЬ, ЧТОБЫ ПОМОЧЬ ВАМ</h2>
+        <p>
+          Хотите узнать больше о наших услугах или записаться на тренировку? Мы всегда рады ответить на ваши вопросы! Свяжитесь с нами по телефону, электронной почте, в нашич соц.сетях или приходите к нам в спортзал. Ваши спортивные достижения начинаются здесь!
+        </p>
+      
+      
+        <div class="social-icons">
+          <a  href="#"><img class="fo-icon-tw fo-icon" src="/img/icon/facebook_123717.png" alt="" /></a>
+          <a  href="#"><img class="fo-icon-fa fo-icon" src="/img/icon/in_123717.png" alt="" /></a>
+          <a  href="#"><img class="fo-icon-pi fo-icon" src="/img/icon/pi_123717.png" alt="" /></a>
+          <a  href="#"><img class="fo-icon-in fo-icon" src="/img/icon/tw_123717.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="contact-form">
+      <div class="contact-form-1">
+        <form action="your-action-url" method="POST">
+          <input
+          class="im-text"
+            type="text"
+            name="full-name"
+            placeholder="Полное имя"
+            required
+          />
+          <input
+          class="im-email"
+            type="email"
+            name="email-address"
+            placeholder="Адрес электронной почты"
+            required
+          />
+        </div>
+          <textarea
+          class="im-message"
+            name="message"
+            placeholder="Напишите сообщение"
+            required
+          ></textarea>
+          <button type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="column">
+          <div class="logo">PowerZone</div>
+          <p>
+            Мы стремимся предоставить вам лучшие условия для тренировок и поддержки вашего здоровья. Приходите к нам и убедитесь сами!
+          </p>
+        </div>
+        <div class="column">
+          <h3>ССЫЛКИ</h3>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+          <a href="#">Помощь и поддержка</a>
+          <a href="#">Наша команда</a>
+          <a href="#">Контакты</a>
+          <a href="#">Галерея</a>
+          <a href="#">О нас</a>
+        </div>
+        <div class="column newsletter">
+          <h3>НОВОСТНАЯ РАССЫЛКА</h3>
+          <p>Подпишитесь, чтобы получать последние новости и обновления о наших услугах и мероприятиях</p>
+          <input type="email" placeholder="Адрес электронной почты" />
+          <input type="submit" value="Подписаться" />
+        </div>
+      </div>
+      <div class="social">
+        <a  href="#"><img class="fo-icon-tw fo-icon" src="/img/icon/facebook_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-fa fo-icon" src="/img/icon/in_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-pi fo-icon" src="/img/icon/pi_123717.png" alt="" /></a>
+        <a  href="#"><img class="fo-icon-in fo-icon" src="/img/icon/tw_123717.png" alt="" /></a>
+      </div>
+      <div class="copyright">&copy; Права защищены, 2024 PowerZone</div>
+    </footer>
+    
+    <script src="/js/scrept.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+
+      var swiper2 = new Swiper(".myNewSwiper", {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper3 = new Swiper(".mymySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+     
+    </script><script>
+        function openTab(tabId, btn) {
+            var i, tabcontent, tabbuttons;
+
+            tabcontent = document.getElementsByClassName("tab-content-teb");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active-teb");
+            }
+
+            tabbuttons = document.getElementsByClassName("tab-button-teb");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active-teb");
+            }
+
+            document.getElementById(tabId).style.display = "block";
+            document.getElementById(tabId).classList.add("active-teb");
+            btn.classList.add("active-teb");
+        }
+
+        // По умолчанию показываем первый таб
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".tab-button-teb").click();
+        });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const modal = document.getElementById("videoModal");
+        const span = document.getElementsByClassName("close")[0];
+    
+        // Получить все элементы с классом "overlay" и добавить событие клика
+        document.querySelectorAll('.overlay, .overlay-1').forEach(item => {
+          item.addEventListener('click', event => {
+            const videoUrl = item.getAttribute('data-video-url');
+            if (videoUrl) {
+              modal.style.display = "block";
+              document.getElementById("videoFrame").src = videoUrl;
+            }
+          });
+        });
+    
+        // Когда пользователь нажимает на <span> (x), закрыть модальное окно
+        span.onclick = function() {
+          modal.style.display = "none";
+          document.getElementById("videoFrame").src = "";
+        }
+    
+        // Когда пользователь нажимает в любом месте вне модального окна, закрыть его
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            document.getElementById("videoFrame").src = "";
+          }
+        }
+      });
+    </script>
+    <script>
+      document.querySelector(".logo").addEventListener("click", function () {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>
